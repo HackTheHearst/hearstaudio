@@ -19,6 +19,7 @@ r = requests.get(url, params=params, headers=headers)
 
 print r.url
 print r.status_code
-print json.dumps(json.loads(r.text), indent=4)
+#print json.dumps(json.loads(r.text), indent=4)
 
-#
+diction = json.loads(r.text)
+print diction
