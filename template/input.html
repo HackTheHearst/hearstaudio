@@ -1,4 +1,95 @@
-<p>"What would you like to look for?"</p>
-<form action="/output" method="POST">
-	<input type="text" name="query">
-</form>
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Wika</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="https://rawgit.com/jltran/hearstaudio/master/js/jquery.min.js"></script>
+		<script src="https://rawgit.com/jltran/hearstaudio/master/js/jquery.poptrox.min.js"></script>
+		<script src="https://rawgit.com/jltran/hearstaudio/master/js/jquery.scrolly.min.js"></script>
+		<script src="https://rawgit.com/jltran/hearstaudio/master/js/jquery.scrollgress.min.js"></script>
+		<script src="https://rawgit.com/jltran/hearstaudio/master/js/skel.min.js"></script>
+		<script src="https://rawgit.com/jltran/hearstaudio/master/js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="https://rawgit.com/jltran/hearstaudio/master/css/skel.css" />
+			<link rel="stylesheet" href="https://rawgit.com/jltran/hearstaudio/master/css/style.css" />
+			<link rel="stylesheet" href="https://rawgit.com/jltran/hearstaudio/master/css/style-wide.css" />
+			<link rel="stylesheet" href="https://rawgit.com/jltran/hearstaudio/master/css/style-normal.css" />
+		</noscript>
+
+	</head>
+	<body>
+		<header id="header">
+
+				<!-- Logo -->
+					<h1 id="logo"></h1>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro"></a></li>
+							<li><a href="#one"></a></li>
+							<li><a href="#two"></a></li>
+							<li><a href="#work">The Collection</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+					</header>
+			
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container small">
+					<header>
+						<h2>Wika</h2>
+					</header>
+					<p><a></a>
+					<strong>Telling stories with native antiquities at the Hearst</strong>
+					<a></a></p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
+		
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2></h2>
+					</header>
+					<p>History rests for its facts largely upon the written records made by people who either lived at the time these things took place, or so near to them that, by careful inquiry, they could learn accurately of these matters and write them down in some form, so that we today can read their accounts, and at least know how these events appeared to men of the time.</p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
+		
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2></h2>
+					</header>
+					<p>But not all that a man writes, or even puts in a book, of things he has seen and known, is infallibly accurate and free from error, partiality, and untruthfulness. So the task of the historian is not merely to read and accept all the contemporary records, but he must also compare one account with another, weighing all that he can find, making due allowance for prejudice, and on his own part trying to reach a conclusion that shall be true. 
+					- Dr. David P. Barrows</p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+			
+			<section id="work" class="main style3 primary">
+				<div class="content container">
+					<header>
+						<h2>Why is this important?</h2>
+						<p>Wika is Tagalog for culture - where history, language, and antiquities merge in mutual understanding. One intersection is through the eyes of anthropologist, Dr.David P. Barrows who studied tribal factions in the Philippines prior to pre-colonial rule. He studied the natives in their habitus. An educator born in Chicago in 1874, his interest first started in the life and customs of the American Indians leading him to "spend almost every summer during 1890–1899 researching the tribes of Southern California and the Colorado desert. Later, he worked as Chief of the Bureau of Non-Christian Tribes of the Philippine Islands recording the ethnography of unknown regions of the islands for military reconnaisance. In 1903, as general superintendent of education for the Islands, he led the total reorganization of the education system establishing English language learning in schools.  He also wrote The History of the Philippines and later became President of the University. His expertise was crucial in shaping public policy on human rights especially in the Senate Hearings on the Philippines. His notes over nine years of study of the islands are still accesible through archives today.  His collection can be accesed through this app along with the many other collectors who have contributed to the Hearst over the years.</p>
+						<p>Wika curates the collection so children K-12, researchers and heritage language learners will be able to access anywhere in the world then they will be able to add their own audio elements each photo and learn from each other.</p>
+					</header>
+
+					<p> What is the story you want to share about?</p>
+					<form action="/output" method="POST"> 
+						<input type="text" name="query">	
+						<input type="button" value="Search" name="query">
+					</form>		
+
+
