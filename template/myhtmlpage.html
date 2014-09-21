@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+</head>
+
+<body>
+
+<div id="content">
+  <p>Why, hello there!</p>
+  {% for item in array %}
+      <img src = "https://dev.cspace.berkeley.edu/pahma_project/imageserver/blobs/{{item}}/derivatives/Medium/content" />
+  {% endfor %}
+  
+</div>
+
+</body>
+</html>
