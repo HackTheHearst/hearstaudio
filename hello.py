@@ -14,6 +14,10 @@ def input():
 
 @app.route('/output', methods=['POST'])
 def output():
+	#get information from front page
+	inputResult = request.form
+	searchWord = inputResult['query']
+
     #Headers with API Keys
 	url = 'https://apis-qa.berkeley.edu/hearst_museum/select'
 	headers = {}
@@ -22,7 +26,7 @@ def output():
 
 	#Defines parameters
 	params = {
-		'q': 'objname_s:fork',
+		'q': 'objname_s:' + str(searchWord),
 		#'q': 'objcollector_ss: Dr. David P. Barrows',
 		'wt': 'json',
 		'indent': 'True',
@@ -46,9 +50,9 @@ def output():
 	env = Environment(loader=PackageLoader('scriptname', 'template'))
 	template = env.get_template('myhtmlpage.html')
 	templateVars = {
-		"title":		"Test Example",
+		"title":		"HearstAudio",
 		"description":	"A simple inquiry of function.",
-		"array": imgArr
+		"array": 		imgArr
 	}
 
 	return template.render(templateVars)
