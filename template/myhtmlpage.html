@@ -24,8 +24,7 @@
 	<div class="container small gallery">
 		<div class="row flush images">
   			{% for item in array %}
-      			
-      			<div class="6u"><a href="https://dev.cspace.berkeley.edu/pahma_project/imageserver/blobs/{{item}}/derivatives/Medium/content" class="image fit from-left"><img src="https://dev.cspace.berkeley.edu/pahma_project/imageserver/blobs/{{item}}/derivatives/Medium/content" title="Ang buslo galing sa Visayan Province." alt="" /></a></div>
+      			<div class="6u" style="height:450px;width:450px;border:2px solid;overflow:hidden;"><a href="https://dev.cspace.berkeley.edu/pahma_project/imageserver/blobs/{{item}}/derivatives/Medium/content" class="image fit from-left"><img src="https://dev.cspace.berkeley.edu/pahma_project/imageserver/blobs/{{item}}/derivatives/Medium/content" title="{{txtDict[item]}}" alt="" /></a></div>
  		 	{% endfor %}
  		 </div>
   

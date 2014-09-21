@@ -47,12 +47,20 @@ def output():
 			imgArr.append(item)
 			itemLimit -= 1
 
+	#Image Titles
+	txtDict = {	"dbda1dd7-70ac-4d2a-85d6":"Pang gamit sa usok ng tobacco galing sa Luzon Province",
+				"2699d4e9-e946-4afe-9ef6":"Ang buslo galing sa Visayan Province.",
+				"4a985ea9-6b22-4a68-be26":"sample text"
+				}
+
+	#Jinja template
 	env = Environment(loader=PackageLoader('scriptname', 'template'))
 	template = env.get_template('myhtmlpage.html')
 	templateVars = {
 		"title":		"HearstAudio",
 		"description":	"We take pictures and add context to them!",
-		"array": 		imgArr
+		"array": 		imgArr,
+		"txtDict":		txtDict
 	}
 
 	return template.render(templateVars)
