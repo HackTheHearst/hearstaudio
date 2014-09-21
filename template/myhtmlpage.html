@@ -5,17 +5,31 @@
 
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}" />
+
+	<script src="https://rawgit.com/jltran/hearstaudio/master/js/jquery.min.js"></script>
+	<script src="https://rawgit.com/jltran/hearstaudio/master/js/jquery.poptrox.min.js"></script>
+	<script src="https://rawgit.com/jltran/hearstaudio/master/js/jquery.scrolly.min.js"></script>
+	<script src="https://rawgit.com/jltran/hearstaudio/master/js/jquery.scrollgress.min.js"></script>
+	<script src="https://rawgit.com/jltran/hearstaudio/master/js/skel.min.js"></script>
+	<script src="https://rawgit.com/jltran/hearstaudio/master/js/init.js"></script>
+	<link rel="stylesheet" href="https://rawgit.com/jltran/hearstaudio/master/css/skel.css" />
+	<link rel="stylesheet" href="https://rawgit.com/jltran/hearstaudio/master/css/style.css" />
+	<link rel="stylesheet" href="https://rawgit.com/jltran/hearstaudio/master/css/style-wide.css" />
+	<link rel="stylesheet" href="https://rawgit.com/jltran/hearstaudio/master/css/style-normal.css" />
+
 </head>
 
 <body>
 
-<div id="content">
-  <p>Why, hello there! {{title}}</p>
-  {% for item in array %}
-      <img src = "https://dev.cspace.berkeley.edu/pahma_project/imageserver/blobs/{{item}}/derivatives/Medium/content" />
-  {% endfor %}
+	<div class="container small gallery">
+		<div class="row flush images">
+  			{% for item in array %}
+      			
+      			<div class="6u"><a href="https://dev.cspace.berkeley.edu/pahma_project/imageserver/blobs/{{item}}/derivatives/Medium/content" class="image fit from-left"><img src="https://dev.cspace.berkeley.edu/pahma_project/imageserver/blobs/{{item}}/derivatives/Medium/content" title="Ang buslo galing sa Visayan Province." alt="" /></a></div>
+ 		 	{% endfor %}
+ 		 </div>
   
-</div>
+	</div>
 
 </body>
 </html>

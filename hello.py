@@ -51,7 +51,7 @@ def output():
 	template = env.get_template('myhtmlpage.html')
 	templateVars = {
 		"title":		"HearstAudio",
-		"description":	"A simple inquiry of function.",
+		"description":	"We take pictures and add context to them!",
 		"array": 		imgArr
 	}
 
